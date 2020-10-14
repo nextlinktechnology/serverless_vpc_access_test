@@ -1,0 +1,26 @@
+swagger: "2.0"
+info:
+  title: "vpc-serverless-access-test"
+  description: "Get the name of an airport from its three-letter IATA code."
+  version: "1.0.0"
+# This field will be replaced by the deploy_api.sh script.
+host: "serverless.enseante.com"
+schemes:
+  - "https"
+paths:
+  "/":
+    get:
+      description: "Get list of specs for inputted server url"
+      operationId: "root"
+      parameters:
+        - name: server
+          in: query
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success."
+          schema:
+            type: string
+        400:
+          description: "Missing server arg."
