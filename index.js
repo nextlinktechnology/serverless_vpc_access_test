@@ -1,21 +1,6 @@
 var axios = require("axios");
 var os = require("os");
 
-// var mysql = require("mysql");
-// mysql -u root -pTaiwan2020! -h 10.146.0.2 -P3306
-// var con = mysql.createConnection({
-//   host: "10.146.0.2",
-//   port: "3306",
-//   user: "my-app-user",
-//   password: "Taiwan2020!",
-//   insecureAuth: true,
-// });
-
-// con.connect(function (err) {
-//   if (err) throw err;
-//   console.log("Connected!");
-// });
-
 var express = require("express");
 var bodyParser = require("body-parser");
 
